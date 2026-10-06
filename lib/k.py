@@ -43,22 +43,18 @@ hows_the_weather("hot")
 
 def fizzbuzz(num):
     try:
-        if num % 3 == 0 and num % 5 == 0:
-            print("FizzBuzz")
-            return "FizzBuzz"
-
-        elif num % 3 == 0:
+        if num % 3 == 0:
             print("Fizz")
             return "Fizz"
-
         elif num % 5 == 0:
             print("Buzz")
             return "Buzz"
-
+        elif num % 3 == 0 and num % 5 == 0:
+            print("FizzBuzz")
+            return "FizzBuzz"
         else:
             print(num)
             return num
-
     except TypeError:
         print("Must be int or float")
         return "Must be int or float"
@@ -88,7 +84,7 @@ def calculator(operator, num1, num2):
             print(num3)
             return num3
         else:
-            print('Invalid operation!')
+            print('Invalid Operation')
             return None
     except TypeError:
         print("Must be int or float")
